@@ -198,6 +198,6 @@ ul li span:hover {
 		padding-top: 50px;
 	}
 	.todo-container {
-		width: 83.3%;
+		width: 83.3% !important;
 	}
 }
