@@ -188,7 +188,7 @@ ul li span:hover {
 	color: white;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) and (min-width: 320px) {
 	.main {
 		flex-direction: column !important;
 	}
