@@ -32,7 +32,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 50px;
+	margin-bottom: 1em;
 }
 
 .hero-container h1 {
@@ -197,6 +197,6 @@ ul li span:hover {
 		padding-top: 50px;
 	}
 	.todo-container {
-		width: 66.64%;
+		width: 83.3%;
 	}
 }
