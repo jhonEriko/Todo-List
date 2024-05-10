@@ -191,10 +191,12 @@ ul li span:hover {
 @media only screen and (max-width: 800px) and (min-width: 320px) {
 	.main {
 		flex-direction: column !important;
+		justify-content: flex-start;
 	}
 	.hero-container {
 		width: 83.3%;
 		padding-top: 50px;
+		margin-bottom: 1em;
 	}
 	.todo-container {
 		width: 83.3% !important;
