@@ -4,7 +4,7 @@ const goalList = document.getElementById("goal-list")
 const addGoal = () => {
 	if (inputGoal.value === '') {
 		alert("You need to write a goal you want to add!");
-		console.log(inputGoal.value)
+		saveData()
 	}
 	else {
 		let li = document.createElement("li");
@@ -15,13 +15,25 @@ const addGoal = () => {
 		li.appendChild(span);
 	}
 	inputGoal.value = "";
+	saveData()
 }
 
 goalList.addEventListener('click', (e) => {
 	if (e.target.tagName === "LI") {
 		e.target.classList.toggle("checked");
+		saveData()
 	}
 	else if (e.target.tagName === "SPAN") {
 		e.target.parentElement.remove();
+		saveData()
 	}
 }, false);
+
+const saveData = () => {
+	localStorage.setItem("data", goalList.innerHTML);
+}
+
+const showGoals = () => {
+	goalList.innerHTML = localStorage.getItem("data");
+}
+showGoals();
